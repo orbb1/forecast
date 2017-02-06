@@ -11,7 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var LoginPageComponent = (function () {
     function LoginPageComponent() {
-        this.user = '';
     }
     LoginPageComponent = __decorate([
         core_1.Component({

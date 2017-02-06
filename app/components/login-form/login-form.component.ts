@@ -1,4 +1,4 @@
-import { Component, Input} from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
     moduleId: module.id,
@@ -8,6 +8,5 @@ import { Component, Input} from '@angular/core'
 })
 
 export class LoginFormComponent {
-    @Input() user:string = '';
-
+    user:string;
 } 
