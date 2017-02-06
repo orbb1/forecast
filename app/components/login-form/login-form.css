@@ -1,0 +1,13 @@
+.LoginForm-Comtainer {
+    padding: 75px;
+    background: #3366ff;
+    background: -webkit-linear-gradient(left top, #3366ff, #77aaff);
+    background: -o-linear-gradient(bottom right, #3366ff, #77aaff);
+    background: -moz-linear-gradient(bottom right, #3366ff, #77aaff);
+    background: linear-gradient(to bottom right, #3366ff, #77aaff); 
+}
+.Logo-Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
