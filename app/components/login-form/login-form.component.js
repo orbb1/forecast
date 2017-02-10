@@ -11,7 +11,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var LoginFormComponent = (function () {
     function LoginFormComponent() {
+        this.user = '';
+        this.typeUser = new core_1.EventEmitter();
     }
+    LoginFormComponent.prototype.onChange = function (newUser) {
+        this.user = newUser;
+        this.typeUser.emit(newUser);
+        console.log('form : ' + this.user);
+    };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', String)
+    ], LoginFormComponent.prototype, "user", void 0);
+    __decorate([
+        core_1.Output(), 
+        __metadata('design:type', Object)
+    ], LoginFormComponent.prototype, "typeUser", void 0);
     LoginFormComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

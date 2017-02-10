@@ -4,7 +4,7 @@
     </div>
     <div>
         <form>
-            <input type="text" placeholder="username" [(ngModel)]="user" name="user">
+            <input type="text" placeholder="username" [(ngModel)]="user" (ngModelChange)="onChange($event)" name="user">
         </form>
     </div>
 </div>

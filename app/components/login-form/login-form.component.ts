@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, Input, Output, EventEmitter } from '@angular/core'
 
 @Component({
     moduleId: module.id,
@@ -8,5 +8,13 @@ import { Component } from '@angular/core'
 })
 
 export class LoginFormComponent {
-    user:string;
+    @Input() user:string = '';
+    @Output() typeUser = new EventEmitter();
+
+    onChange(newUser: string) {
+        
+        this.user = newUser;
+        this.typeUser.emit(newUser)
+        console.log('form : '+ this.user);
+    }
 } 
