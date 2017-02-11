@@ -9,25 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var login_page_component_1 = require('../../../app/pages/login-page/login-page.component');
-var home_page_component_1 = require('../../../app/pages/home-page/home-page.component');
-var appRoutes = [
-    { path: '', redirectTo: '/login', pathMatch: 'full' },
-    { path: 'login', component: login_page_component_1.LoginPageComponent },
-    { path: 'home', component: home_page_component_1.HomePageComponent }
-];
-var RoutingModule = (function () {
-    function RoutingModule() {
+var HomePageComponent = (function () {
+    function HomePageComponent() {
     }
-    RoutingModule = __decorate([
-        core_1.NgModule({
-            imports: [router_1.RouterModule.forRoot(appRoutes)],
-            exports: [router_1.RouterModule]
+    HomePageComponent = __decorate([
+        core_1.Component({
+            template: '<h1>home Page</h1>'
         }), 
         __metadata('design:paramtypes', [])
-    ], RoutingModule);
-    return RoutingModule;
+    ], HomePageComponent);
+    return HomePageComponent;
 }());
-exports.RoutingModule = RoutingModule;
-//# sourceMappingURL=routing.module.js.map
+exports.HomePageComponent = HomePageComponent;
+//# sourceMappingURL=home-page.component.js.map
