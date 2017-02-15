@@ -6,18 +6,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var HomePageComponent = (function () {
+    function HomePageComponent() {
     }
-    return AppComponent;
+    return HomePageComponent;
 }());
-AppComponent = __decorate([
+HomePageComponent = __decorate([
     core_1.Component({
-        moduleId: module.id,
-        selector: 'app',
-        template: "<router-outlet></router-outlet>",
-        styleUrls: ['./app.css']
+        template: '<h1>home Page</h1>'
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], HomePageComponent);
+exports.HomePageComponent = HomePageComponent;
+//# sourceMappingURL=home-page.component.js.map

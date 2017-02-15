@@ -6,18 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var home_page_component_1 = require("./home-page.component");
+var HomePageModule = (function () {
+    function HomePageModule() {
     }
-    return AppComponent;
+    return HomePageModule;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'app',
-        template: "<router-outlet></router-outlet>",
-        styleUrls: ['./app.css']
+HomePageModule = __decorate([
+    core_1.NgModule({
+        declarations: [home_page_component_1.HomePageComponent]
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], HomePageModule);
+exports.HomePageModule = HomePageModule;
+;
+//# sourceMappingURL=home-page.module.js.map
