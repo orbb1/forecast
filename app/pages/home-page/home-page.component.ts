@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-    template: '<h1>home Page</h1>'
+    moduleId: module.id,
+    templateUrl: './home-page.html'
 })
 
 export class HomePageComponent {}

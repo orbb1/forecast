@@ -6,20 +6,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var http_1 = require("@angular/http");
-var home_page_component_1 = require("./home-page.component");
-var forecast_component_1 = require("../../components/forecast/forecast.component");
-var HomePageModule = (function () {
-    function HomePageModule() {
+var ForecastComponent = (function () {
+    function ForecastComponent() {
     }
-    return HomePageModule;
+    return ForecastComponent;
 }());
-HomePageModule = __decorate([
-    core_1.NgModule({
-        imports: [http_1.HttpModule],
-        declarations: [home_page_component_1.HomePageComponent, forecast_component_1.ForecastComponent]
+ForecastComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'forecast',
+        templateUrl: './forecast.html',
+        styleUrls: ['./forecast.css']
     })
-], HomePageModule);
-exports.HomePageModule = HomePageModule;
-;
-//# sourceMappingURL=home-page.module.js.map
+], ForecastComponent);
+exports.ForecastComponent = ForecastComponent;
+//# sourceMappingURL=forecast.component.js.map

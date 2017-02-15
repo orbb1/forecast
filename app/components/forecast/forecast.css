@@ -1,0 +1,13 @@
+.Forecast-Container {
+    background: #3366ff;
+    background: -webkit-linear-gradient(left top, #3366ff, #77aaff);
+    background: -o-linear-gradient(bottom right, #3366ff, #77aaff);
+    background: -moz-linear-gradient(bottom right, #3366ff, #77aaff);
+    background: linear-gradient(to bottom right, #3366ff, #77aaff); 
+    width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
