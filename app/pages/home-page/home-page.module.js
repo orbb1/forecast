@@ -9,6 +9,7 @@ var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var home_page_component_1 = require("./home-page.component");
 var forecast_component_1 = require("../../components/forecast/forecast.component");
+var WeatherService_1 = require("../../shared/services/WeatherService");
 var HomePageModule = (function () {
     function HomePageModule() {
     }
@@ -17,7 +18,8 @@ var HomePageModule = (function () {
 HomePageModule = __decorate([
     core_1.NgModule({
         imports: [http_1.HttpModule],
-        declarations: [home_page_component_1.HomePageComponent, forecast_component_1.ForecastComponent]
+        declarations: [home_page_component_1.HomePageComponent, forecast_component_1.ForecastComponent],
+        providers: [WeatherService_1.WeatherService]
     })
 ], HomePageModule);
 exports.HomePageModule = HomePageModule;

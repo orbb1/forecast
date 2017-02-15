@@ -5,9 +5,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 var core_1 = require("@angular/core");
+var WeatherService_1 = require("../../shared/services/WeatherService");
 var ForecastComponent = (function () {
-    function ForecastComponent() {
+    function ForecastComponent(weatherService) {
+        this.weatherService = weatherService;
+        this.checkWeather = function () { return this.weatherService.getWeatherData(); };
     }
     return ForecastComponent;
 }());
@@ -17,7 +23,8 @@ ForecastComponent = __decorate([
         selector: 'forecast',
         templateUrl: './forecast.html',
         styleUrls: ['./forecast.css']
-    })
+    }),
+    __metadata("design:paramtypes", [WeatherService_1.WeatherService])
 ], ForecastComponent);
 exports.ForecastComponent = ForecastComponent;
 //# sourceMappingURL=forecast.component.js.map
