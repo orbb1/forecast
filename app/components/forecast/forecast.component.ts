@@ -12,5 +12,5 @@ import { WeatherService } from '../../shared/services/WeatherService';
 export class ForecastComponent {
     constructor(private weatherService: WeatherService) {}
 
-    checkWeather = function() { return this.weatherService.getWeatherData(); }
+    checkWeather = () => this.weatherService.getWeatherData();
 }

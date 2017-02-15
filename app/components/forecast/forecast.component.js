@@ -12,8 +12,9 @@ var core_1 = require("@angular/core");
 var WeatherService_1 = require("../../shared/services/WeatherService");
 var ForecastComponent = (function () {
     function ForecastComponent(weatherService) {
+        var _this = this;
         this.weatherService = weatherService;
-        this.checkWeather = function () { return this.weatherService.getWeatherData(); };
+        this.checkWeather = function () { return _this.weatherService.getWeatherData(); };
     }
     return ForecastComponent;
 }());
