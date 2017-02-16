@@ -11,14 +11,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var config_1 = require("../config");
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
-require("rxjs/add/operator/map");
+require("rxjs/add/operator/toPromise");
 var WeatherService = (function () {
     function WeatherService(http) {
         this.http = http;
     }
     WeatherService.prototype.getWeatherData = function () {
         console.log('getting weather..');
-        return http.get(config_1.WEATHER_API_URL).map(function (response) { return response.json(); });
+        return this.http.get(config_1.WEATHER_API_URL).toPromise().then(function (response) { return response.json; });
     };
     ;
     return WeatherService;
